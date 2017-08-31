@@ -78,19 +78,13 @@ public class Puzzles {
 
   // Create a random string that is 5 characters long.
   public String puzzle6() {
-    // String[] array = new String[5];
     String myString = "";
     String[] letters = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
     for (int i = 0; i < 5; i++){
       double num = 26*Math.random();
       int x = (int)num;
-      // array[i] = letters[x];
       myString += letters[x];
     }
-    // System.out.println(Arrays.toString(array));
-    // return array;
-    // String myString = array[0]+array[1]+array[2]+array[3]+array[4];
-    // System.out.println(myString);
     return myString;
   }
 
